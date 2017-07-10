@@ -1,24 +1,4 @@
-# README
+# What is this?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an experiment to expose two database models via the same JSON-API Resource via [jsonapi-resources](https://github.com/cerebris/jsonapi-resources)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
