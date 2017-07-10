@@ -7,5 +7,6 @@ RSpec.describe 'A health API request', type: :request do
     get '/api/v1/health', headers: headers
 
     expect(response).to have_http_status(:ok)
+    expect(JSON.parse(response.body)).to eq({ "api_status" => "ok" })
   end
 end
