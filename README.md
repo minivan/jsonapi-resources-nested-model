@@ -5,7 +5,7 @@ This is an experiment to expose two database models via the same JSON-API Resour
 
 # How does it work?
 
-
+![](https://raw.githubusercontent.com/minivan/jsonapi-resources-nested-model/master/public/jsonapi-resource.png)
 
 # Where do I look?
 
