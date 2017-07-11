@@ -12,4 +12,22 @@ RSpec.describe 'API requests to contacts', type: :request do
       expect(object.dig("attributes", "name")).to eq("Test Contact")
     end
   end
+
+  describe 'POST create' do
+    it 'creates the new contact' do
+      new_contact_data = {
+        type: :contacts,
+        attributes: {
+          name: "POST testing contact"          
+        }
+      }
+
+      expect {
+        post '/api/v1/contacts/', params: { data: new_contact_data }.to_json,
+          headers: { 'Accept' => JSONAPI::MEDIA_TYPE, 'CONTENT_TYPE' => JSONAPI::MEDIA_TYPE }
+      }.to change {
+        Contact.count        
+      }.by(1)
+    end
+  end
 end
